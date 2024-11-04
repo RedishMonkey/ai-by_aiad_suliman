@@ -6,16 +6,16 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-path = "K:/"
-csv_file = "Social_Network_Ads.csv"
-csv_file_path = path+ "/"+ csv_file
-dataset = pd.read_csv(csv_file_path)
+path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/07-K-Nearest Neighbors (K-NN)"
+csv_file = "Social_Network_Ads.csv"
+csv_file_path = path+ "/"+ csv_file
+dataset = pd.read_csv(csv_file_path)
 
 X = dataset.iloc[:, [2, 3]].values
 y = dataset.iloc[:, 4].values
 
 # Splitting the dataset into the Training set and Test set
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 
 # Feature Scaling

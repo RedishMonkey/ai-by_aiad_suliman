@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Step 1 : Importing the dataset
-path = "K:/"
+path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/05-Decision Trees"
 csv_file = "Position_Salaries.csv"
 csv_file_path = path+ "/"+ csv_file
 dataset = pd.read_csv(csv_file_path)

@@ -23,8 +23,12 @@ X_test = sc.transform(X_test)
 # Fitting classifier to the Training set
 # Create your classifier here
 
-# Predicting the Test set results
+# Fitting K-NN to the Training set
 from sklearn.neighbors import KNeighborsClassifier
+classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+classifier.fit(X_train, y_train)
+
+# Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
 # Making the Confusion Matrix

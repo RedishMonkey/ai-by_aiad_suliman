@@ -24,6 +24,7 @@ X_test = sc.transform(X_test)
 # Create your classifier here
 
 # Predicting the Test set results
+from sklearn.neighbors import KNeighborsClassifier
 y_pred = classifier.predict(X_test)
 
 # Making the Confusion Matrix

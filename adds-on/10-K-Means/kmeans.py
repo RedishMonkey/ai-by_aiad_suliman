@@ -6,7 +6,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Mall_Customers.csv')
+path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/10-K-Means"
+csv_file = "Mall_Customers.csv"
+csv_file_path = path+ "/"+ csv_file
+dataset = pd.read_csv(csv_file_path)
 X = dataset.iloc[:, [3, 4]].values
 # y = dataset.iloc[:, 3].values
 

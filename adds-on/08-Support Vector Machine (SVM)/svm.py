@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-path = "K:/"
+path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/08-Support Vector Machine (SVM)"
 csv_file = "Social_Network_Ads.csv"
 csv_file_path = path+ "/"+ csv_file
 dataset = pd.read_csv(csv_file_path)

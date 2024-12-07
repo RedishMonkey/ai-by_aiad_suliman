@@ -4,9 +4,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 # Importing the dataset
-path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/06-Random Forest"
+path = os.path.dirname(__file__)
 csv_file = "Position_Salaries.csv"
 csv_file_path = path+ "/"+ csv_file
 dataset = pd.read_csv(csv_file_path)

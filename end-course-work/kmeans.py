@@ -4,10 +4,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 # Importing the dataset
-path = "C:/Users/ofirn/ofir things/gitRepositories/ai-by_aiad_suliman/adds-on/10-K-Means"
-csv_file = "Mall_Customers.csv"
+folder_path = os.path.dirname(__file__)
+
+print(f"Folder Path: {folder_path}")
+
+# Step 1 : Importing the dataset
+path = os.path.dirname(__file__)
+csv_file = "diabetes.csv"
 csv_file_path = path+ "/"+ csv_file
 dataset = pd.read_csv(csv_file_path)
 X = dataset.iloc[:, [3, 4]].values
